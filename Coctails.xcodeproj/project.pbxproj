@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		93F5851A2BA18EA300A8C030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F585192BA18EA300A8C030 /* AppDelegate.swift */; };
 		93F5851C2BA18EA300A8C030 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5851B2BA18EA300A8C030 /* SceneDelegate.swift */; };
-		93F5851E2BA18EA300A8C030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5851D2BA18EA300A8C030 /* ViewController.swift */; };
-		93F585212BA18EA300A8C030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F5851F2BA18EA300A8C030 /* Main.storyboard */; };
+		93F5851E2BA18EA300A8C030 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5851D2BA18EA300A8C030 /* MainViewController.swift */; };
 		93F585232BA18EA700A8C030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F585222BA18EA700A8C030 /* Assets.xcassets */; };
 		93F585262BA18EA700A8C030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F585242BA18EA700A8C030 /* LaunchScreen.storyboard */; };
+		93F5852E2BA190B500A8C030 /* CoctailsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5852D2BA190B500A8C030 /* CoctailsDetailsViewController.swift */; };
+		93F585302BA190E100A8C030 /* CoctailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5852F2BA190E100A8C030 /* CoctailCell.swift */; };
+		93F585322BA1910E00A8C030 /* Coctail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F585312BA1910E00A8C030 /* Coctail.swift */; };
+		93F5853A2BA193CC00A8C030 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93F585392BA193CC00A8C030 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93F585162BA18EA300A8C030 /* Coctails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coctails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F585192BA18EA300A8C030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F5851B2BA18EA300A8C030 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93F5851D2BA18EA300A8C030 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		93F585202BA18EA300A8C030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93F5851D2BA18EA300A8C030 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		93F585222BA18EA700A8C030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93F585252BA18EA700A8C030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93F585272BA18EA700A8C030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F5852D2BA190B500A8C030 /* CoctailsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailsDetailsViewController.swift; sourceTree = "<group>"; };
+		93F5852F2BA190E100A8C030 /* CoctailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailCell.swift; sourceTree = "<group>"; };
+		93F585312BA1910E00A8C030 /* Coctail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F5853A2BA193CC00A8C030 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,57 @@
 		93F585182BA18EA300A8C030 /* Coctails */ = {
 			isa = PBXGroup;
 			children = (
-				93F585192BA18EA300A8C030 /* AppDelegate.swift */,
-				93F5851B2BA18EA300A8C030 /* SceneDelegate.swift */,
-				93F5851D2BA18EA300A8C030 /* ViewController.swift */,
-				93F5851F2BA18EA300A8C030 /* Main.storyboard */,
-				93F585222BA18EA700A8C030 /* Assets.xcassets */,
+				93F585362BA1914000A8C030 /* App */,
+				93F585352BA1912F00A8C030 /* ViewControllers */,
+				93F585342BA1911F00A8C030 /* Views */,
+				93F585332BA1911200A8C030 /* Models */,
+				93F585372BA1915100A8C030 /* Resources */,
 				93F585242BA18EA700A8C030 /* LaunchScreen.storyboard */,
 				93F585272BA18EA700A8C030 /* Info.plist */,
 			);
 			path = Coctails;
+			sourceTree = "<group>";
+		};
+		93F585332BA1911200A8C030 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93F585312BA1910E00A8C030 /* Coctail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93F585342BA1911F00A8C030 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93F5852F2BA190E100A8C030 /* CoctailCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93F585352BA1912F00A8C030 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93F5852D2BA190B500A8C030 /* CoctailsDetailsViewController.swift */,
+				93F5851D2BA18EA300A8C030 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		93F585362BA1914000A8C030 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				93F585192BA18EA300A8C030 /* AppDelegate.swift */,
+				93F5851B2BA18EA300A8C030 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		93F585372BA1915100A8C030 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93F585222BA18EA700A8C030 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +131,9 @@
 			dependencies = (
 			);
 			name = Coctails;
+			packageProductDependencies = (
+				93F585392BA193CC00A8C030 /* SnapKit */,
+			);
 			productName = Coctails;
 			productReference = 93F585162BA18EA300A8C030 /* Coctails.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 93F5850D2BA18EA300A8C030;
+			packageReferences = (
+				93F585382BA193CC00A8C030 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 93F585172BA18EA300A8C030 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +181,6 @@
 			files = (
 				93F585262BA18EA700A8C030 /* LaunchScreen.storyboard in Resources */,
 				93F585232BA18EA700A8C030 /* Assets.xcassets in Resources */,
-				93F585212BA18EA300A8C030 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +191,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F5851E2BA18EA300A8C030 /* ViewController.swift in Sources */,
+				93F5851E2BA18EA300A8C030 /* MainViewController.swift in Sources */,
+				93F585302BA190E100A8C030 /* CoctailCell.swift in Sources */,
+				93F5852E2BA190B500A8C030 /* CoctailsDetailsViewController.swift in Sources */,
 				93F5851A2BA18EA300A8C030 /* AppDelegate.swift in Sources */,
 				93F5851C2BA18EA300A8C030 /* SceneDelegate.swift in Sources */,
+				93F585322BA1910E00A8C030 /* Coctail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		93F5851F2BA18EA300A8C030 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93F585202BA18EA300A8C030 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		93F585242BA18EA700A8C030 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +345,6 @@
 				INFOPLIST_FILE = Coctails/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +376,6 @@
 				INFOPLIST_FILE = Coctails/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93F585382BA193CC00A8C030 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93F585392BA193CC00A8C030 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93F585382BA193CC00A8C030 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93F5850E2BA18EA300A8C030 /* Project object */;
 }
